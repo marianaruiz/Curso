@@ -1,0 +1,18 @@
+package curso.projecto4.view;
+
+import curso.projecto4.business.Inventario;
+import curso.projecto4.business.Pedido;
+
+public class Carrito {
+    private Inventario inventario;
+    private Pedido pedido;
+     public Inventario carrito(){
+        return inventario;
+     }
+     
+     public void iniciar(){
+         inventario=new Inventario();
+         pedido=new Pedido();
+         
+     }
+}

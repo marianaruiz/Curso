@@ -1,0 +1,21 @@
+package curso.ejercicio8;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+import org.junit.Test;
+
+public class PersonitaTest {
+    @Test
+    public void crearTreeSetComparadorNombre() {
+        Set<Personita> personas=new TreeSet<Personita>(new ComparadorNombre());
+        personas.add(new Gente("Mariana",4));
+        personas.add(new Gente("Adrian",13));
+        personas.add(new Gente("Luis",23));
+        personas.add(new Gente("Mariana",4));
+        System.out.println("------------------------Comparador Nombre -----------------------");
+        for (Gente persona : personas) {
+            System.out.println(persona.toString());
+        }
+    }
+}

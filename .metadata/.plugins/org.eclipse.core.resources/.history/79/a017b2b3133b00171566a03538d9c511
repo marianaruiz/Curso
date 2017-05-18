@@ -1,0 +1,17 @@
+package curso.ejercicio7;
+
+public class MainEjecicio7 {
+    public static void main(String[] args){
+        Contenedor c= new Contenedor();
+        try{
+            for(int i=0; i<10;i++){
+                c.agregar(i);
+            }
+        }catch (MaximoException e) {
+           System.out.println(e.getMessage());
+        }finally{
+            System.out.println("dentro de finally");
+        }
+        System.out.println("Continuo Feliz");
+    }
+}

@@ -1,0 +1,43 @@
+package curso.proyecto5.view;
+
+import java.util.Scanner;
+
+import curso.proyecto.business.Agenda;
+import curso.proyecto5.model.Contacto;
+
+public class TerminalManager {
+    private Agenda agenda;
+    private Scanner scanner;
+    private boolean banderacontinunar;
+    public TerminalManager() {
+       scanner= new Scanner(System.in);
+    }
+    public void iniciar(){
+        scanner= new Scanner(System.in);
+    }
+    
+    public void TerminalManager(Agenda agenda){
+        this.agenda=agenda;
+    }
+    private int solicitarOpcion(){
+        System.out.println("-----------Bienvenido a tu Agenda----------");
+        System.out.println("Selecciona una Opción");
+        System.out.println("1.-Ingresar Contacto");
+        System.out.println("2.-Ver contactos por Nombre");
+        System.out.println("3.-Ver contactos por Fecha Nacimimento");
+        System.out.println("4.-Buscar Contacto");
+        System.out.println("5.-Salir");
+        
+        return 0;
+        
+    }
+    
+    private Contacto computarContacto(){
+        return null;
+        
+    }
+    private String solicitarNombre(){
+        return null;
+        
+    }
+}

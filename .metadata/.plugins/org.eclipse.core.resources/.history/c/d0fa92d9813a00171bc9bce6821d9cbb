@@ -1,0 +1,61 @@
+package curso.ejemplo6;
+
+import curso.ejemplo5.Coleccionable;
+import curso.ejemplo5.Disco;
+import curso.ejemplo5.Libro;
+import curso.ejemplo5.Tarjeta;
+
+public class Coleccionador {
+    Coleccionable[] coleccionable =new Coleccionable[10];
+
+    public int ContarLibros() {
+        int contador = 0;
+        for (Coleccionable coleccionador : coleccionable) {
+            contador=coleccionador instanceof Libro?contador+1:contador;
+        }
+        return contador;
+    }
+
+    public int ContarDiscos() {
+        int contador = 0;
+        for (Coleccionable coleccionador : coleccionable) {
+            contador=coleccionador instanceof Disco?contador+1:contador;
+        }
+        return contador;
+    }
+
+    public int ContarTarjetas() {
+        int contador = 0;
+        for (Coleccionable coleccionador : coleccionable) {
+            contador=coleccionador instanceof Tarjeta?contador+1:contador;
+        }
+        return contador;
+    }
+
+    public boolean agregarElemento(Coleccionable nuevoColeccionador) {
+        for (Coleccionable coleccionador : coleccionable) {
+            if(coleccionador.getIdentificador()==nuevoColeccionador.getIdentificador()){
+                return false; 
+            }
+            else{
+                
+                return true;
+                
+            }
+        }
+        return false;
+        
+    }
+
+    public String generarInventario() {
+        String inventario="";
+        for (Coleccionable coleccionable2 : coleccionable) {
+            inventario=coleccionable2.imprimir();
+        }
+        return inventario;
+    }
+    
+    public Coleccionable consultas(int numero){
+        return coleccionable[numero];
+    }
+}

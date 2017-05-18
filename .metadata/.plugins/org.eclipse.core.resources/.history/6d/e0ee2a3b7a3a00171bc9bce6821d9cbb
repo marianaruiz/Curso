@@ -1,0 +1,25 @@
+package curso.ejemplo5;
+
+import curso.interfases.Imprimible;
+
+public abstract class Coleccionable implements Imprimible{
+    private int identificador;
+    private int edicion;
+    
+    public int getIdentificador() {
+        return identificador;
+    }
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
+    }
+    public int getEdicion() {
+        return edicion;
+    }
+    public void setEdicion(int edicion) {
+        this.edicion = edicion;
+    }
+    public String imprimir() {
+        return "identificador=" + identificador + "\nedicion=" + edicion";
+    }
+      
+}

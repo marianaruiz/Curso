@@ -1,0 +1,40 @@
+package curso.proyecto5.model;
+
+public class MedioComunicación {
+    private TipoMedio tipoMedio;
+    private String valor;
+    public MedioComunicación(TipoMedio tipoMedio, String valor) {
+        super();
+        this.tipoMedio = tipoMedio;
+        this.valor = valor;
+    }
+    public TipoMedio getTipoMedio() {
+        return tipoMedio;
+    }
+    public void setTipoMedio(TipoMedio tipoMedio) {
+        this.tipoMedio = tipoMedio;
+    }
+    public String getValor() {
+        return valor;
+    }
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        // TODO Auto-generated method stub
+        return super.equals(obj);
+    }
+    @Override
+    public int hashCode() {
+        // TODO Auto-generated method stub
+        return super.hashCode();
+    }
+    @Override
+    public String toString() {
+        return "tipoMedio=" + tipoMedio + "\nvalor=" + valor ;
+    }
+
+
+    
+}

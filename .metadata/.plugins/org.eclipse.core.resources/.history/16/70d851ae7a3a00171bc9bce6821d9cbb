@@ -1,0 +1,6 @@
+package curso.ejemplo6;
+
+public class Coleccionador {
+    Coleccionador coleccionable[];
+    
+}

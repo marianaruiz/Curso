@@ -1,0 +1,10 @@
+package curso.ejercicio7;
+
+public class MaximoException extends Exception {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+    
+}

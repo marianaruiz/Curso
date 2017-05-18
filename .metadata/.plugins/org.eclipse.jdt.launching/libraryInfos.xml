@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Users\Mariana Ruiz\Documents\java18jre" version="1.8.0_131">
+<bootpath>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\resources.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\rt.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\jsse.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\jce.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\charsets.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\jfr.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\Mariana Ruiz\Documents\java18jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Users\Mariana Ruiz\Documents\java6" version="1.6.0_25">
+<bootpath>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\resources.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\rt.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\jsse.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\jce.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\charsets.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\Mariana Ruiz\Documents\java6\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

@@ -1,0 +1,5 @@
+package curso.projecto4.model;
+
+public interface Comprable {
+
+}

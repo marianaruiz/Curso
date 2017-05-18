@@ -1,0 +1,5 @@
+package curso.ejemplo.interfases;
+
+public interface Operable {
+    public int Suma(int numeroUno,int numeroDos);
+}

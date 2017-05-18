@@ -1,0 +1,4 @@
+package curso.ejemplo.interfases;
+interface Operable {
+    int operar(int numeroUno,int numeroDos);
+}

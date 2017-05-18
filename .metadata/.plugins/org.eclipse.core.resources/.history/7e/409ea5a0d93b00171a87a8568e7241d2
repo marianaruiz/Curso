@@ -1,0 +1,10 @@
+package curso.ejercicio8;
+
+import org.junit.Test;
+
+public class PersonaTest {
+    @Test
+    public void saludoTest() {
+        Persona perosnaUno = new Persona()
+    }
+}

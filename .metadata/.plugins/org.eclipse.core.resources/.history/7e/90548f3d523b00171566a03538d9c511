@@ -1,0 +1,45 @@
+package curso.projecto4.business;
+
+import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import curso.projecto4.model.Comprable;
+import curso.projecto4.model.ComprableImp;
+
+public class Pedido {
+    private Comprable[] productos=new ComprableImp[15];
+    private int[] cantidades= new int[15];
+    private int indice;
+    DateFormat dateformart=new SimpleDateFormat("dd/MM/yyyy");
+    NumberFormat numbreFormart=new DecimalFormat("###,###.00");
+    
+    public void agregarProducto(Comprable producto,int cantidad){
+        if(indice<15){
+            productos[indice]=producto;
+            cantidades[indice]=cantidad;
+            indice+=1;
+        }
+        else{
+            System.out.println("No se pueden agregar mas elementos al carrito");
+        }
+    }
+
+    public String imprimir(){
+        StringBuilder aux = new StringBuilder();
+        aux.append("Pedido\n");
+        aux.append(String.format("Fecha : %s",dateformart.format(new Date())));
+        aux.append("\n");
+        aux.append("Producto       Cantidad      Precio    Cantidad     Total  \n");
+        BigDecimal total= new BigDecimal(0);
+        for (int i = 0;i<cantidades.length;i++) {
+            aux.append(productos[i].toString());
+            aux.append("\n"+"Cantidad: "+cantidades[i]);
+        }
+        return aux.toString();
+    }
+    
+}

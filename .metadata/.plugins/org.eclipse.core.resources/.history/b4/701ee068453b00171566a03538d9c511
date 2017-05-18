@@ -1,0 +1,22 @@
+package curso.projecto4.business;
+
+import curso.projecto4.model.Comprable;
+import curso.projecto4.model.ComprableImp;
+
+public class Pedido {
+    private Comprable[] productos=new ComprableImp[15];
+    private int cantidades;
+    private int indice;
+    
+    public void agregarProducto(Comprable producto){
+        if(indice<15){
+            productos[indice]=producto;
+            indice+=1;
+        }
+        else{
+            System.out.println("No se pueden agregar mas elementos al carrito");
+        }
+    }
+
+    
+}

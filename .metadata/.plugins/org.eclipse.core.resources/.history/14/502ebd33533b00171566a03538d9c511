@@ -1,0 +1,44 @@
+package curso.projecto4.view;
+
+import java.util.Scanner;
+
+import curso.projecto4.business.Inventario;
+import curso.projecto4.business.Pedido;
+import curso.projecto4.business.SinStockExeption;
+import curso.projecto4.model.Comprable;
+
+public class Carrito {
+    private Inventario inventario=new Inventario();
+    private Pedido pedido=new Pedido();
+    private int banderaComprar=1;
+     public Inventario carrito(){
+        return inventario;
+     }
+     
+     public void iniciar(){
+         int productoseleccionado=-1;
+         int cantidad;
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Bienvenido a la tienda");
+         while(banderaComprar!=0){
+             System.out.println(inventario.ListarArticulos());
+             System.out.println("4.-Terminar Compra");
+             System.out.println("Slecciona un Producto");
+             productoseleccionado =sc.nextInt();
+             System.out.println("Ingresa la cantidad");
+             cantidad=sc.nextInt();
+             if(productoseleccionado!=4){
+                 try {
+                     Comprable comprable=carrito().Utilizar(productoseleccionado, cantidad);
+                    pedido.agregarProducto(comprable,cantidad);
+                } catch (SinStockExeption e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+             }
+             else{
+                 banderaComprar=1;
+             }
+         }
+     }
+}

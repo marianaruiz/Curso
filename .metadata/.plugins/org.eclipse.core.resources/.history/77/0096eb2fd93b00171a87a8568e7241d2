@@ -1,0 +1,10 @@
+package curso.ejercicio8;
+
+public class PersonaTest {
+
+ // Object
+    @Test
+    public void probarObjeto() throws Exception {
+        
+    }
+}

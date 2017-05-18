@@ -1,0 +1,14 @@
+package curso.projecto4.model;
+
+import java.math.BigDecimal;
+
+public class ComprableImp {
+    private BigDecimal precio;
+    public enum TipoArticulo{
+        CELULAR,
+        TABLET,
+        LAPTOP
+    }
+    
+    
+}

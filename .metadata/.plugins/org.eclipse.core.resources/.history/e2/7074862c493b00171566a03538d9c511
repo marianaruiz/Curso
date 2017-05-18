@@ -1,0 +1,26 @@
+package curso.projecto4.business;
+
+import java.security.SignatureException;
+
+import curso.projecto4.model.ElementoDeInventario;
+
+public class Inventario {
+ private ElementoDeInventario[] elementos= new ElementoDeInventario[50];
+ public String ListarArticulos(){
+     StringBuilder aux = new StringBuilder();
+     for(int i=0; i< elementos.length;i++){
+         aux.append(elementos[i].toString());
+     }
+     return aux.toString();
+ }
+ public void Utilizar(int indice, int cantidada) throws SinStockExeption{
+     if(elementos[indice].getExistencias()>cantidada){
+         throw new SinStockExeption(elementos[indice].getComprable().getTipo().getTipoArticulo()
+                 ,elementos[indice].getExistencias());
+     }
+     else{
+         elementos[indice].setExistencias(cantidada);
+     }
+     
+ } 
+}

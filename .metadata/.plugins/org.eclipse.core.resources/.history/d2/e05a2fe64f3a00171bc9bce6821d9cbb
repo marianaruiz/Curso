@@ -1,0 +1,7 @@
+package curso.ejemplo4;
+
+public class ProgramaD2 {
+    public static void main(String[] args) {
+        Calculadora calculadora= new Calculadora();
+    }
+}

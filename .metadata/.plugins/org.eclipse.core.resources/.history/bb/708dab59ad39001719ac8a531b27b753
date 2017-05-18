@@ -1,0 +1,8 @@
+package curso.projecto2;
+
+public class HolaMundoTest {
+    public void saludar(){
+        HolaMundo hola=new HolaMundo();
+    }
+
+}

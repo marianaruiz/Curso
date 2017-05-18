@@ -1,0 +1,10 @@
+package curso.ejemplo4;
+
+public class ProgramaD2 {
+    public static void main(String[] args) {
+        Calculadora calculadora= new Calculadora();
+        System.out.println("Suma: "+calculadora.getsuma());
+        System.out.println("Resta: "+calculadora.getResta());
+        System.out.println("Multiplicación: "+calculadora.getMultiplicacion());
+    }
+}

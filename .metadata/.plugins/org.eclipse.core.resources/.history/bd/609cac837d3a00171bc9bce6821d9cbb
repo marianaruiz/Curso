@@ -1,0 +1,27 @@
+package curso.ejemplo6;
+
+public class Coleccionador {
+    Coleccionador[] coleccionable;
+    
+    public int ContarLibros(){
+        int contador=0;
+        for (Coleccionador coleccionador : coleccionable) {
+        }
+        return contador;
+    }
+    public int ContarDiscos(){
+        int contador=0;
+        for (Coleccionador coleccionador : coleccionable) {
+        }
+        return contador;
+    }
+    public int ContarTarjetas(){
+        int contador=0;
+        for (Coleccionador coleccionador : coleccionable) {
+        }
+        return contador;
+    }
+    public void agregarElemento(Coleccionador nuevoColeccionador){
+        coleccionable[coleccionable.length+1]=nuevoColeccionador;
+    }
+}

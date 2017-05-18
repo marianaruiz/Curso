@@ -1,0 +1,44 @@
+package curso.ejemplo6;
+
+import curso.ejemplo5.Coleccionable;
+
+public class Coleccionador {
+    Coleccionable[] coleccionable =new Coleccionable[150];
+
+    public int ContarLibros() {
+        int contador = 0;
+        for (Coleccionable coleccionador : coleccionable) {
+        }
+        return contador;
+    }
+
+    public int ContarDiscos() {
+        int contador = 0;
+        for (Coleccionable coleccionador : coleccionable) {
+        }
+        return contador;
+    }
+
+    public int ContarTarjetas() {
+        int contador = 0;
+        for (Coleccionable coleccionador : coleccionable) {
+        }
+        return contador;
+    }
+
+    public void agregarElemento(Coleccionable nuevoColeccionador) {
+        coleccionable[coleccionable.length + 1] = nuevoColeccionador;
+    }
+
+    public String generarInventario() {
+        String inventario="";
+        for (Coleccionable coleccionable2 : coleccionable) {
+            inventario=coleccionable2.imprimir();
+        }
+        return inventario;
+    }
+    
+    public Coleccionable consultas(int numero){
+        return coleccionable[numero];
+    }
+}

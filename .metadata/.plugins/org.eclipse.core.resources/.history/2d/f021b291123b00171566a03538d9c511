@@ -1,0 +1,5 @@
+package curso.ejercicio7;
+
+public class MaximoException extends Exception {
+    
+}

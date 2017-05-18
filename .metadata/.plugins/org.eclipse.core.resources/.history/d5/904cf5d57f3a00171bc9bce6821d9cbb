@@ -1,0 +1,12 @@
+package curso.ejemplo6;
+
+import curso.ejemplo5.Disco;
+
+public class Practica2 {
+    public static void main(String[] args) {
+        Coleccionador coleccionador= new Coleccionador();
+        coleccionador.agregarElemento(new Disco(1, "uno", 10));
+        coleccionador.agregarElemento(new Disco(2, "dos", 15));
+        coleccionador.agregarElemento(new Disco(3, "dos", 15));
+    }
+}

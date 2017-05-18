@@ -1,0 +1,10 @@
+package curso.ejemplo6;
+
+public class Coleccionador {
+    Coleccionador coleccionable[];
+    public int ContarLibros(){
+        for (Coleccionador coleccionador : coleccionable) {
+        }
+        return 1;
+    }
+}

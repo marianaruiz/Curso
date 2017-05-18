@@ -1,0 +1,41 @@
+package curso.projecto4.business;
+
+import curso.ejercicio7.MaximoException;
+
+public class SinStockExeption extends Exception{
+    private String tipo;
+    private int disponibles;
+     
+    
+    public SinStockExeption(String tipo, int disponibles) {
+        super();
+        this.tipo = tipo;
+        this.disponibles = disponibles;
+    }
+    public String getTipo() {
+        return tipo;
+    }
+
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+
+    public int getDisponibles() {
+        return disponibles;
+    }
+
+
+    public void setDisponibles(int disponibles) {
+        this.disponibles = disponibles;
+    }
+
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
+    
+}

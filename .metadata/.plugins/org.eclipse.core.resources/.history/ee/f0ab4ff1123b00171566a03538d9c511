@@ -1,0 +1,15 @@
+package curso.ejercicio7;
+
+public class Contenedor {
+    private int[] elementos= new int[4];
+    int MAXIMO=4;
+    int indice=0;
+    public void agregar(int i) throws MaximoException{
+        if(indice<MAXIMO){
+            elementos[indice]=i;
+        }
+        else{
+            throw new MaximoException();
+        }
+    }
+}

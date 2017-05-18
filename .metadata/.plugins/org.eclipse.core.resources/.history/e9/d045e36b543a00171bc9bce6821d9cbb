@@ -1,0 +1,5 @@
+package curso.ejemplo.interfases;
+
+interface Operable {
+    int Suma(int numeroUno,int numeroDos);
+}

@@ -1,0 +1,33 @@
+package curso.proyecto5.model;
+
+import java.util.Date;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Contacto {
+    private String nombre;
+    private Date fechaNacimiento;
+    private Set<MedioComunicacion> medios= new TreeSet<MedioComunicacion>();
+    public Contacto() {
+        super();
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+    public Set<MedioComunicacion> getMedios() {
+        return medios;
+    }
+    public void setMedios(Set<MedioComunicacion> medios) {
+        this.medios = medios;
+    }
+    
+}

@@ -1,0 +1,29 @@
+package curso.projecto4.view;
+
+import java.util.Scanner;
+
+import curso.projecto4.business.Inventario;
+import curso.projecto4.business.Pedido;
+
+public class Carrito {
+    private Inventario inventario;
+    private Pedido pedido;
+    private int banderaComprar=1;
+     public Inventario carrito(){
+        return inventario;
+     }
+     
+     public void iniciar(){
+         inventario=new Inventario();
+         pedido=new Pedido();
+         int productoseleccionado;
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Bienvenido a la tienda");
+         if(banderaComprar!=0){
+             inventario.ListarArticulos();
+             String nombre = sc.nextLine();
+             System.out.println("ingresa un numero");
+              productoseleccionado =sc.nextInt();
+         }
+     }
+}

@@ -1,0 +1,83 @@
+package curso.ejercicio7;
+
+import org.junit.Test;
+
+public class Ejemplo7Test {
+    // Object
+    @Test
+    public void probarObjeto() {
+        Contenedor obj = new Contenedor();
+        System.out.println("---------------------Object----------------");
+        //Contenedor obj2= (Contenedor)obj.clone();
+        System.out.println(obj.getClass());
+        System.out.println(obj.getClass());
+        System.out.println(obj.hashCode());
+        System.out.println(obj.toString());
+    }
+
+    // String
+    @Test
+    public void probarString() {
+        String cadena = "HOLA MuNdO";
+        System.out.println("---------------------String----------------");
+        System.out.println(cadena.contains("hola"));
+        System.out.println(cadena.endsWith("dO"));
+        System.out.println(String.format("Ejemplo de cadena %s", cadena));
+        System.out.println(cadena.getBytes());
+        System.out.println(cadena.isEmpty());
+        System.out.println(cadena.length());
+        System.out.println(cadena.replaceAll("A", "u"));
+        System.out.println(cadena.split(" "));
+        System.out.println(cadena.startsWith("H"));
+        System.out.println(cadena.substring(2, 5));
+        System.out.println(cadena.toLowerCase());
+        System.out.println(cadena.toUpperCase());
+
+    }
+
+    // Long
+    @Test
+    public void probarLong(){
+        Long i=(long) 1;
+        Long i2=(long) 2;
+        System.out.println("---------------------LOnG----------------");
+        System.out.println(i.compareTo(i2));
+        System.out.println(i2.compareTo(i));
+        System.out.println(i.compareTo(i));
+        System.out.println(i.intValue());
+        System.out.println(Long.parseLong("123"));
+        System.out.println(Long.valueOf("123"));
+    }
+
+ // Math
+    @Test
+    public void provarMath() {
+        System.out.println("---------------------Math----------------");
+        Long i=(long) 1;
+        Long i2=(long) 2;
+        System.out.println(Math.max(1, i2));
+        System.out.println(Math.min(1, i2));
+        System.out.println(Math.pow(2, 4));
+        System.out.println(Math.random());
+        System.out.println(Math.round(1.23444));
+    }
+ // System
+    @Test
+    public void probarsystem() {
+        System.out.println("---------------------System----------------");
+        System.out.println(System.currentTimeMillis());
+        System.out.println(System.getenv("JAVA-HOME"));
+        System.err.println("ERROR");
+    }
+    // CompareTO
+    @Test
+    public void compareTo() {
+        System.out.println("---------------------CompareTo----------------");
+        Integer i = 1;
+        Integer i2 = 2;
+        System.out.println(i.compareTo(i2));
+        System.out.println(i2.compareTo(i));
+        System.out.println(i.compareTo(i));
+    }
+
+}

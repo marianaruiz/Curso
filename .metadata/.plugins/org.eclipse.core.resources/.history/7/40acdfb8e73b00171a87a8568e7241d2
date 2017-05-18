@@ -1,0 +1,21 @@
+package curso.ejercicio8;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+import org.junit.Test;
+
+public class GenteTest {
+    @Test
+    public void crearTreeSet() {
+        Set<Gente> personas=new TreeSet<Gente>();
+        personas.add(new Gente("Mariana",4));
+        personas.add(new Gente("Adrian",23));
+        personas.add(new Gente("Luis",23));
+        personas.add(new Gente("Mariana",4));
+        System.out.println("-----------------------------------------------");
+        for (Gente persona : personas) {
+            System.out.println(persona.toString());
+        }
+}

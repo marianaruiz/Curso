@@ -1,0 +1,12 @@
+package curso.proyecto5.view;
+
+import java.util.Scanner;
+
+import curso.proyecto.business.Agenda;
+
+public class TerminalManager {
+    private Agenda agenda;
+    private Scanner scanner;
+    
+    
+}

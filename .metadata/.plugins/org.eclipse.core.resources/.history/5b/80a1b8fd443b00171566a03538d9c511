@@ -1,0 +1,11 @@
+package curso.projecto4.business;
+
+import curso.projecto4.model.Comprable;
+import curso.projecto4.model.ComprableImp;
+
+public class Pedido {
+    private Comprable[] productos=new ComprableImp[15];
+    private int cantidades;
+    private int indice;
+
+}

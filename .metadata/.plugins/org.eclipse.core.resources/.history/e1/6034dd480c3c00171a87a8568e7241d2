@@ -1,0 +1,17 @@
+package curso.proyecto.business;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import curso.proyecto5.model.Contacto;
+
+public class Agenda {
+    private  Map<String,Contacto> contactos= new HashMap<String, Contacto>();
+    private String nombreDelMienbro;
+    public Agenda() {
+        super();
+    }
+    public void agregarContacto(String nombre,Contacto contacto){
+     
+    }
+}

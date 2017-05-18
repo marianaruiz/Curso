@@ -1,0 +1,19 @@
+package curso.ejemplo5;
+
+public class Coleccionable {
+    private int identificador;
+    private int edicion;
+    public int getIdentificador() {
+        return identificador;
+    }
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
+    }
+    public int getEdicion() {
+        return edicion;
+    }
+    public void setEdicion(int edicion) {
+        this.edicion = edicion;
+    }
+    
+}
